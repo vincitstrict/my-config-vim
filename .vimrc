@@ -1,61 +1,78 @@
-call plug#begin('~/.vim/plugged')
+  call plug#begin('~/.vim/plugged')
 
 
 
-
-
+Plug 'edkolev/tmuxline.vim'
 
 Plug 'mattn/emmet-vim'
 
 
   "colorschemes
 Plug  'morhetz/gruvbox'    
-      "avto_skobki
-        Plug 'jiangmiao/auto-pairs'
-          " Use release branch (recommend)
-           Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"avto_skobki
+Plug 'jiangmiao/auto-pairs'
+" Use release branch (recommend)
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-            Plug 'tpope/vim-surround'
-                Plug 'tpope/vim-commentary'
-                  Plug 'w0rp/ale'
-                      
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'w0rp/ale'
+                     
+
+
+
+
+"snipmate 
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+
+Plug 'honza/vim-snippets'
+
+
+
+
+
                     
-                    
-                          Plug 'SirVer/ultisnips'
-                             Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle'  } 
-                             Plug 'itchyny/lightline.vim' 
-
-  call plug#end()
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle'  } 
+Plug 'itchyny/lightline.vim' 
 
 
 
 
+call plug#end()
 
-  set number
-    set shiftwidth=4
-     set smarttab
-     set tabstop=2
-        set expandtab
-        set t_vb=
-        set novisualbell
-        set nobackup
-        set noswapfile
-        set encoding=utf-8
+
+
+
+
+
+set number
+set shiftwidth=4
+set smarttab
+set tabstop=2
+set expandtab
+set t_vb=
+set novisualbell
+set nobackup
+set noswapfile
+set encoding=utf-8
        
-        set wrap
-        set linebreak
-        set t_Co=256
+set wrap
+set linebreak
+set t_Co=256
 
          
 
-	  syntax on
+syntax on
 
-	     colorscheme gruvbox
-	    set background=dark
+colorscheme gruvbox
+set background=dark
               
 
 	        "mappings
-		  map <C-n> :NERDTreeToggle<CR>
+          
+map <C-n> :NERDTreeToggle<CR>
 
 
 
